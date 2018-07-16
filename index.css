@@ -21,6 +21,17 @@ body {
 /*-------------
 --------------*/
 
+@-webkit-keyframes animate-gradient {
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+@keyframes animate-gradient { 
+    0%{background-position:97% 0%}
+    50%{background-position:4% 100%}
+    100%{background-position:97% 0%}
+}
+
 .index_container {
   padding-top: 60px;
   padding-bottom: 40px;
@@ -98,7 +109,10 @@ body {
   height: 540px;
   padding: 30px;
   border-radius: 10px;
-  background-image: linear-gradient(-45deg, #ffecd2 0%, #ffa835 100%);
+  background: linear-gradient(45deg, #fdfc47, #24fe41, #83a4d4, #b6fbff);
+  background-size: 800% 800%;
+  -webkit-animation: animate-gradient 30s ease infinite;
+  animation: animate-gradient 30s ease infinite;
 }
 
 #photo {
