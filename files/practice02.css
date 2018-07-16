@@ -1,0 +1,123 @@
+/*-------------
+ CSS RESET 
+--------------*/
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+body {
+}
+
+/*-------------
+--------------*/
+
+.index_container {
+  padding-top: 80px;
+  display: block;
+  width: 520px;
+  margin: 0 auto;
+}
+
+.index_inner {
+  display: inline-block;
+  width: 520px;
+  margin: 0 auto;
+}
+
+.index {
+  float: left;
+  width: 130px;
+  margin: 0 auto;
+}
+
+.index_title {
+  text-align: center;
+  font-weight: regular;
+  font-family: IBMPlexMono;
+  font-size: 20px;
+  color: #929292;
+  letter-spacing: -0.73px;
+  line-height: 34px;
+}
+
+.index_title_selected {
+  text-align: center;
+  font-weight: regular;
+  font-family: IBMPlexMono;
+  font-size: 20px;
+  color: black;
+  letter-spacing: -0.73px;
+  line-height: 34px;
+  text-decoration: underline;
+  text-decoration-color: #ffcbcb;
+}
+
+.index:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/*-------------
+버튼 호버시, "어서 눌러주세요" 라는 멘트가 버튼 밑에 뜬다.
+버튼을 누르면, 계속 숫자가 바뀐다.
+숫자 중에 "34"가 나오면 "당첨되셨습니다." 라는 멘트의 팝업이 뜬다. (from 예지)
+--------------*/
+
+.date_container {
+  text-align: center;
+  width: 1200px;
+}
+
+.date {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  width: 1200px;
+  margin-top: 40px;
+}
+.date_des {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  opacity: 0.5;
+}
+
+#galleryZone {
+  padding-top: 100px;
+  margin: 0 auto;
+  width: 1200px;
+  height: 700px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: orange;
+}
+
+#photo {
+  text-align: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 300px;
+}
+
+.btn_container {
+  text-align: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.btn {
+  width: 50px;
+  height: 30px;
+  background-color: white;
+  border-radius: 4px;
+}

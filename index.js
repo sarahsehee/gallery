@@ -10,5 +10,5 @@ function gallery(direct) {
   }
 
   var imgTag = document.getElementById("photo");
-  imgTag.setAttribute("src", "imgs/pic_" + num + ".jpg");
+  imgTag.setAttribute("src", "./imgs/pic_" + num + ".jpg");
 }
