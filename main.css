@@ -1,0 +1,36 @@
+/*-------------
+ CSS RESET 
+--------------*/
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+body {
+}
+
+/*-------------
+--------------*/
+
+#galleryZone {
+  width: 1200px;
+  height: 900px;
+  padding: 100px;
+  border-radius: 10px;
+  background-color: rosybrown;
+}
+
+.btn {
+  width: 40px;
+  height: 30px;
+  background-image: linear-gradient(-45deg, #fe3f17 0%, #ffa835 100%);
+  border-radius: 4px;
+}
