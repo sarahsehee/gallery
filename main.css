@@ -20,12 +20,22 @@ body {
 /*-------------
 --------------*/
 
+.date_container {
+  text-align: center;
+  width: 1200px;
+}
+
 .date {
   font-size: 20px;
   color: #000000;
   text-align: center;
   width: 1200px;
-  margin-bottom: 100px;
+  margin-top: 40px;
+}
+.date_des {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  opacity: 0.5;
 }
 
 #galleryZone {
@@ -52,8 +62,8 @@ body {
 }
 
 .btn {
-  width: 40px;
+  width: 50px;
   height: 30px;
-  background-image: linear-gradient(-45deg, #fe3f17 0%, #ffa835 100%);
+  background-color: white;
   border-radius: 4px;
 }
