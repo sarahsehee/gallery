@@ -7,7 +7,7 @@
     <title>Sarah and Hudson</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="./practice01.css" rel="stylesheet">
+    <link href="./practice02.css" rel="stylesheet">
 
 
 </head>
@@ -20,9 +20,9 @@
     <div class="index_container">
         <ul class="index_inner">
 
-            <li class="index">
-                <a href="#">
-                    <div class="index_title_selected">
+            <li class="index" id="index_hover">
+                <a href="../index.html">
+                    <div class="index_title">
                         July 15, Sunday
                     </div>
                 </a>
@@ -32,7 +32,7 @@
             <li class="index">
                 <a href="#">
                     <div class="index_title_selected">
-                        July 14, Sunday
+                        July 10, Tuesday
                     </div>
                 </a>
             </li>
@@ -41,8 +41,8 @@
 
             <li class="index">
                 <a href="#">
-                    <div class="index_title_selected">
-                        July 13, Sunday
+                    <div class="index_title">
+                        May 12, Saturday
                     </div>
                 </a>
             </li>
@@ -51,8 +51,16 @@
 
             <li class="index">
                 <a href="#">
-                    <div class="index_title_selected">
-                        July 12, Sunday
+                    <div class="index_title">
+                        April 20, Friday
+                    </div>
+                </a>
+            </li>
+
+            <li class="index">
+                <a href="#">
+                    <div class="index_title">
+                        April 13, Friday
                     </div>
                 </a>
             </li>
@@ -62,25 +70,34 @@
 
 
 
-    <div id="galleryZone">
-        <div class="date_container">
-            <div class="date">July 15, Sunday</div>
-            <div class="date_des">위워크 - 간식으로 빵 - 저녁은 Song's dairy
-                <br> 넘나 여유로웠던 일요일 오후 😁 </div>
+    <div class="galleryZone">
+        <div class="btn_container">
+            <div class="alarm">어서 눌러바용!</div>
+
+
+            <button class="btn" id="hvr-pulse-grow" onclick="lotto()">
+                <div class="btn_inner">
+                    <div class="btn_text">❤️</div>
+                </div>
+            </button>
         </div>
-        <p>
-            <img src="../imgs/pic_1.jpg" id="photo" style="width:600px;" alt="">
 
-            <div class="btn_container">
-                <button class="btn" onclick="gallery(0)" , "changeColor">이전</button>
-
-                <button class="btn" onclick="gallery(1)" , "changeColor">다음</button>
-
-            </div>
+        <div class="alarm">어서 눌러주세용!</div>
+        <div class="result_container">
+            <div id="result">312302</div>
+        </div>
     </div>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="modal_text">당첨되셨습니다!</p>
+        </div>
+    </div>
 
-    <script src="./practice01.js"> </script>
+    <script src="./practice02.js"> </script>
 
 </body>
 

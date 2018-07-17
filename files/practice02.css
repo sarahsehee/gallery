@@ -18,32 +18,38 @@ body {
 }
 
 /*-------------
+index
 --------------*/
 
 .index_container {
-  padding-top: 80px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   display: block;
-  width: 520px;
+  width: 600px;
   margin: 0 auto;
 }
 
 .index_inner {
   display: inline-block;
-  width: 520px;
+  width: 600px;
   margin: 0 auto;
 }
 
 .index {
   float: left;
-  width: 130px;
+  width: 80px;
+  padding: 20px;
   margin: 0 auto;
+}
+
+.index_hover:hover {
 }
 
 .index_title {
   text-align: center;
   font-weight: regular;
   font-family: IBMPlexMono;
-  font-size: 20px;
+  font-size: 13px;
   color: #929292;
   letter-spacing: -0.73px;
   line-height: 34px;
@@ -53,7 +59,8 @@ body {
   text-align: center;
   font-weight: regular;
   font-family: IBMPlexMono;
-  font-size: 20px;
+  font-size: 13px;
+  font-weight: 800;
   color: black;
   letter-spacing: -0.73px;
   line-height: 34px;
@@ -91,32 +98,148 @@ body {
   opacity: 0.5;
 }
 
-#galleryZone {
+.galleryZone {
+  position: relative;
   margin: 0 auto;
-  width: 1200px;
-  height: 700px;
+  width: 1000px;
+  height: 540px;
   padding: 30px;
   border-radius: 10px;
-  background-color: orange;
-}
-
-#photo {
-  text-align: center;
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 300px;
-}
-
-.btn_container {
-  text-align: center;
-  width: 1200px;
-  margin: 0 auto;
-  padding-top: 30px;
+  background-color: #fbf6f6;
 }
 
 .btn {
-  width: 50px;
-  height: 30px;
-  background-color: white;
-  border-radius: 4px;
+  border-radius: 100px;
+  position: relative;
+  width: 140px;
+  height: 140px;
+  background-color: #e95958;
+  box-shadow: 0 12px 16px 0 rgba(233, 89, 88, 0.37);
+}
+
+.btn_inner {
+  border-radius: 100px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+}
+
+.btn_text {
+  top: 18px;
+  left: 20px;
+  position: absolute;
+  font-size: 40px;
+}
+
+.btn_container {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.alarm {
+  padding-bottom: 30px;
+  opacity: 0;
+  font-size: 18px;
+  text-align: center;
+  color: #e95958;
+  transition: all 1s ease-in-out;
+}
+
+.btn_container:hover .alarm {
+  opacity: 1;
+}
+
+/*---hvr-pulse-grow-----*/
+
+@-webkit-keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes hvr-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+
+#hvr-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+#hvr-pulse-grow:hover,
+#hvr-pulse-grow:focus,
+#hvr-pulse-grow:active {
+  -webkit-animation-name: hvr-pulse-grow;
+  animation-name: hvr-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+/*--------*/
+
+.result_container {
+  position: absolute;
+  top: 320px;
+  width: 1000px;
+}
+#result {
+  font-family: IBMPlexMono;
+  font-size: 100px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0 7px 9px rgba(0, 0, 0, 0.5);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 400px;
+}
+
+.modal_text {
+  padding-top: 150px;
+  text-align: center;
+  font-size: 50px;
 }
