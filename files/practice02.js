@@ -3,18 +3,52 @@
 /// (from 예지)
 
 // get the random number
-var num = [1, "히히", 34, 56, 787, 84, 85, 345, 66, 23];
+var num = [
+  1,
+  34,
+  56,
+  787,
+  84,
+  85,
+  345,
+  66,
+  23,
+  123,
+  45,
+  345,
+  56,
+  66,
+  23,
+  23,
+  33,
+  78,
+  97,
+  72
+];
 
 // Get the modal
 var modal = document.getElementById("myModal");
+
+var span = document.getElementsByClassName("close")[0];
 
 function lotto() {
   var randomPick = num[Math.floor(Math.random() * num.length)];
 
   document.getElementById("result").innerHTML = randomPick;
 
-  if (randomPick === "히히") {
+  if (randomPick === 97) {
     modal.style.display = "block";
+
+    span.onclick = function() {
+      modal.style.display = "none";
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
   } else if (randomPick !== "히히") {
     modal.style.display = "none";
   }
