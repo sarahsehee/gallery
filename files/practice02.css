@@ -230,6 +230,7 @@ index
 
 /* Modal Content */
 .modal-content {
+  border-radius: 10px;
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
