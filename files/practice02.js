@@ -31,6 +31,8 @@ var modal = document.getElementById("myModal");
 
 var span = document.getElementsByClassName("close")[0];
 
+///lotto function
+
 function lotto() {
   var randomPick = num[Math.floor(Math.random() * num.length)];
 
