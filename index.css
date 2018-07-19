@@ -46,30 +46,20 @@ body {
 
 /*-------------
 index
+{display: flex}를 이용해 <ul> 안의 <li>들을 정렬합니다. 
+👉참고: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 --------------*/
 
-.index_container {
+
+ul {
   padding-top: 30px;
   padding-bottom: 10px;
-  display: block;
-  width: 600px;
-  margin: 0 auto;
-}
-
-.index_inner {
-  display: inline-block;
-  width: 600px;
-  margin: 0 auto;
+  display:flex;
+  justify-content: center;
 }
 
 .index {
-  float: left;
-  width: 80px;
   padding: 20px;
-  margin: 0 auto;
-}
-
-.index_hover:hover {
 }
 
 .index_title {
@@ -82,24 +72,14 @@ index
   line-height: 34px;
 }
 
-.index_title_selected {
-  text-align: center;
-  font-weight: regular;
-  font-family: IBMPlexMono;
-  font-size: 13px;
+#selected {
   font-weight: 800;
   color: black;
-  letter-spacing: -0.73px;
-  line-height: 34px;
   text-decoration: underline;
   text-decoration-color: #ffcbcb;
 }
 
-.index:after {
-  clear: both;
-  content: "";
-  display: block;
-}
+
 
 /*-------------
 --------------*/
